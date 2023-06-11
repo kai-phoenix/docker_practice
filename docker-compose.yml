@@ -1,8 +1,6 @@
 version: '3'
 services:
- httpd:
-  image: httpd
-  ports:
-   - '81:80'
-  volumes:
-   - ./htdocs:/usr/local/apache2/htdocs
+  tutorial:
+    image: docker/getting-started
+    ports:
+      - '80:80'
